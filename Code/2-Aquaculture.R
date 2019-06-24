@@ -34,9 +34,13 @@ aquaInv <- aquaInv[, 'AquacultureInvertebrates']
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #                                  EXPORT DATA
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Change name for uniformity
+AquacultureFish <- aquaFish
+AquacultureInvertebrates <- aquaInv
+
 # Export object as .RData
-save(aquaFish, file = './Data/Driver/AquacultureFish.RData')
-save(aquaInv, file = './Data/Driver/AquacultureInvertebrates.RData')
+save(AquacultureFish, file = './Data/Driver/AquacultureFish.RData')
+save(AquacultureInvertebrates, file = './Data/Driver/AquacultureInvertebrates.RData')
 
 
 
